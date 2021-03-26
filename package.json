@@ -1,0 +1,17 @@
+{
+  "name": "bot-connard",
+  "version": "1.0.0",
+  "description": "A discord bot",
+  "main": "index.js",
+  "repository": "https://github.com/Thibanani/bot-jjr.git",
+  "author": "Thibault BANSIERE <thibault.bansiere@etu.univ-nantes.fr>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.1.0",
+    "discord.js": "^12.1.1",
+    "ffmpeg-static": "^4.1.0"
+  }
+}
