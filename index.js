@@ -11,7 +11,7 @@ bot.on('ready', async() =>{
 
 
 /*------------------------------ Réaction émote au channel rôle ------------------------------*/
-bot.on('messageReactionAdd', (reaction, user) => {
+bot.on('messageReactionAdd', async (reaction, user) => {
   //if (reaction.message.channel.name != config.channel_role) return
   //else {
     reaction.message.channel.send(`Yep`)
