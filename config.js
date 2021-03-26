@@ -1,6 +1,7 @@
 const config = {
   prefix: "$",
-  token: process.env.BOT_TOKEN
+  token: process.env.BOT_TOKEN,
+  channel_role: jjr
 
 };
 
