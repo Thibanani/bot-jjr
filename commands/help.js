@@ -1,6 +1,6 @@
 module.exports.run = async (bot,msg,args) => {
   const Discord = require('discord.js');
-  const exampleEmbed = new Discord.MessageEmbed()
+  const helpEmbed = new Discord.MessageEmbed()
   	.setColor('#0099ff')
   	.setTitle('Pour toi le boulet 🖕')
   	//.setURL('https://discord.js.org/')
@@ -22,7 +22,7 @@ module.exports.run = async (bot,msg,args) => {
   	.setFooter("L'auteur c'est moi");
 
 
-  msg.channel.send(exampleEmbed);
+  msg.channel.send(helpEmbed);
 
 }
 
