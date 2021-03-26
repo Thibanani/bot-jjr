@@ -12,9 +12,10 @@ bot.on('ready', async() =>{
 
 /*------------------------------ Réaction émote au channel rôle ------------------------------*/
 bot.on('messageReactionAdd', (reaction, user) => {
-  if (reaction.emoji != null ){
+  //if (reaction.message.channel.name != config.channel_role) return
+  //else {
     reaction.message.channel.send(`Yep`)
-  }
+  //}
   /*if (!reaction.message.guild || user.bot) return
   const reactionRoleElem = config.reactionRole[reaction.message.id]
   if (!reactionRoleElem) return
