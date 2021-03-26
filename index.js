@@ -12,7 +12,7 @@ bot.on('ready', async() =>{
 
 /*------------------------------ Réaction émote au channel rôle ------------------------------*/
 bot.on('messageReactionAdd', (reaction, user) => {
-  if (reaction)
+  if (reaction){
     reaction.message.channel.send(`Yep`)
   }
   /*if (!reaction.message.guild || user.bot) return
