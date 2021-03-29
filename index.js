@@ -42,7 +42,7 @@ bot.on('messageReactionAdd', async (reaction, user) => {
 	// The reaction is now also fully available and the properties will be reflected accurately:
 	console.log(`${reaction.count} user(s) have given the same reaction to this message!`);
 
-  if(reaction == config.role.etn){
+  if(reaction.emoji == config.role.etn){
     console.log(`${reaction.message.author.name} devient ${config.role.etn}`);
   }
   //reaction.message.guild.member(user).roles.add(emoji.roles)*/
