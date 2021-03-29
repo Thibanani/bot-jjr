@@ -7,6 +7,13 @@ const commands = require('./commands.js');
 bot.on('ready', async() =>{
   console.log('Le bot est lancé.');
   bot.user.setActivity('Québecqwé');
+
+  if(bot.channels.name)
+  console.log(`${bot.channels.name} bot.channels.name`);
+
+
+
+
 });
 
 
