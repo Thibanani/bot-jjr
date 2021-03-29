@@ -35,18 +35,17 @@ bot.on('messageReactionAdd', async (reaction, user) => {
 	}
 
 
-  if(reaction.message.channel.name != config.role.channel) return;
+  if(reaction.message.channel.name != config.role.channel) return;// vérif du bon channel
 
 	// Now the message has been cached and is fully available
 	console.log(`${reaction.message.author.name}'s message "${reaction.message.content}" gained a reaction!`);
 	// The reaction is now also fully available and the properties will be reflected accurately:
 	console.log(`${reaction.count} user(s) have given the same reaction to this message!`);
 
-/*
-  if(reaction == config.role){
-
+  if(reaction == config.role.etn){
+    console.log(`${reaction.message.author.name} devient ${config.role.etn}`);
   }
-  reaction.message.guild.member(user).roles.add(emoji.roles)*/
+  //reaction.message.guild.member(user).roles.add(emoji.roles)*/
 
 
 
@@ -60,6 +59,9 @@ bot.on('messageReactionAdd', (reaction, user) => {
   else {
     reaction.message.channel.send(`Yep`)
   }*/
+
+
+
   /*if (!reaction.message.guild || user.bot) return
 
   const reactionRoleElem = config.reactionRole[reaction.message.id]

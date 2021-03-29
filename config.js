@@ -5,8 +5,11 @@ const config = {
 
 
   role: {
-          channel: "attribution-des-rôle",
-          role: "718970160647635056"
+          channel: "attribution-des-rôle", // nom du channel
+          etn: "1️⃣",//nom des émote
+          te: "2️⃣",
+          mat: "3️⃣",
+          info: "4️⃣"
       }
 
 
