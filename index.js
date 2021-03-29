@@ -8,10 +8,16 @@ bot.on('ready', async() =>{
   console.log('Le bot est lancé.');
   bot.user.setActivity('Québecqwé');
 
-  console.log(`${bot.channels} bot.channels.name`);
 
+  /* ---------------------------------------------------------------------------------------
+    A faire :
+      - checks des channel utile genre (attribution des role et tout)
+      - création des channel si ils existnt PAS
+      - checks des rôle
+      - création des rôle
+  */
 
-
+  //console.log(`${bot.channels} bot.channels.name`);
 
 });
 

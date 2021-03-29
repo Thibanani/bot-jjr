@@ -5,7 +5,7 @@ const config = {
 
 
   role: {
-          channel: "yo",
+          channel: "attribution-des-rôle",
           role: "718970160647635056"
       }
 
