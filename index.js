@@ -11,14 +11,19 @@ bot.on('ready', async() =>{
 
 
 /*------------------------------ Réaction émote au channel rôle ------------------------------*/
-bot.on('messageReactionAdd', async (reaction, user) => {
-  //if (reaction.message.channel.name != config.channel_role) return
-  //else {
+bot.on('messageReactionAdd', (reaction, user) => {
+
+  reaction.MessageReaction(client,data,msg);
+  msg.channel.send(`Yep`)
+  /*if (reaction.message.channel.name != config.channel_role) return
+  else {
     reaction.message.channel.send(`Yep`)
-  //}
+  }*/
   /*if (!reaction.message.guild || user.bot) return
+
   const reactionRoleElem = config.reactionRole[reaction.message.id]
   if (!reactionRoleElem) return
+
   const prop = reaction.emoji.id ? 'id' : 'name'
   const emoji = reactionRoleElem.emojis.find(emoji => emoji[prop] === reaction.emoji[prop])
   if (emoji) reaction.message.guild.member(user).roles.add(emoji.roles)
