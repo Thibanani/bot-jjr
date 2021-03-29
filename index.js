@@ -13,7 +13,7 @@ bot.on('ready', async() =>{
 /*------------------------------ Réaction émote au channel rôle ------------------------------*/
 bot.on('messageReactionAdd', (reaction, user) => {
 
-  reaction.MessageReaction(client,data,msg);
+  reaction.MessageReaction(bot,data,msg);
   msg.channel.send(`Yep`)
   /*if (reaction.message.channel.name != config.channel_role) return
   else {
