@@ -24,7 +24,7 @@ bot.on('messageReactionAdd', async (reaction, user) => {
 
   console.log(`${config.role.channel} config.role.channel`);
   console.log(`${reaction.message.channel.toString()} reaction.message.channel.toString()`);
-  if(reaction.message.channel.toString() != config.role.channel) return;
+  //if(reaction.message.channel.toString() != config.role.channel) return;
 
 	// Now the message has been cached and is fully available
 	console.log(`${reaction.message.author.name}'s message "${reaction.message.content}" gained a reaction!`);
