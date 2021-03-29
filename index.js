@@ -11,7 +11,7 @@ bot.on('ready', async() =>{
 
 
 /*------------------------------ Réaction émote au channel rôle ------------------------------*/
-client.on('messageReactionAdd', async (reaction, user) => {
+bot.on('messageReactionAdd', async (reaction, user) => {
 	// When we receive a reaction we check if the reaction is partial or not
 	if (reaction.partial) {// If the message this reaction belongs to was removed the fetching might result in an API error, which we need to handle
 		try {
@@ -25,9 +25,9 @@ client.on('messageReactionAdd', async (reaction, user) => {
 	console.log(`${reaction.message.author}'s message "${reaction.message.content}" gained a reaction!`);
 	// The reaction is now also fully available and the properties will be reflected accurately:
 	console.log(`${reaction.count} user(s) have given the same reaction to this message!`);
-  if(reaction.message.channel != config.channel_role) return;
-  
+  //if(reaction.message.channel != config.channel_role) return;
 
+  //reaction.message.guild.member(user).roles.add(emoji.roles)
 
 
 });
