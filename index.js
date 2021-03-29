@@ -21,13 +21,20 @@ bot.on('messageReactionAdd', async (reaction, user) => {
 			return;
 		}
 	}
+
+  if(reaction.message.channel.toString() != config.role.channel) return;
+
 	// Now the message has been cached and is fully available
-	console.log(`${reaction.message.author}'s message "${reaction.message.content}" gained a reaction!`);
+	console.log(`${reaction.message.author.name}'s message "${reaction.message.content}" gained a reaction!`);
 	// The reaction is now also fully available and the properties will be reflected accurately:
 	console.log(`${reaction.count} user(s) have given the same reaction to this message!`);
-  //if(reaction.message.channel != config.channel_role) return;
 
-  //reaction.message.guild.member(user).roles.add(emoji.roles)
+/*
+  if(reaction == config.role){
+
+  }
+  reaction.message.guild.member(user).roles.add(emoji.roles)*/
+
 
 
 });
